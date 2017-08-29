@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="demo.xsl"?>
+<root>
+    <env>
+        <domain>local</domain>
+    </env>
+    <login>
+        <uid>git/wurui</uid>
+    </login>
+    <p>
+        <title>demo page</title>
+        <desc>this is deme page</desc>
+        <owner>openxsl</owner>
+        <icon>//oxm1.cc/img/app_default.png</icon>
+    </p>
+    <data>
+            <alipayform>
+        <service>
+            mobilephone
+        </service>
+        <partner>
+            light-weight camera
+        </partner>
+        <_input_charset>
+            UTF-8
+        </_input_charset>
+        <payment_type>
+            1
+        </payment_type>
+        <total_fee>
+            1650.82
+        </total_fee>
+        <seller_id>
+            light-weight car
+        </seller_id>
+        <out_trade_no>
+            watch
+        </out_trade_no>
+        <subject>
+            strong watch
+        </subject>
+        <sign>
+            mobilephone
+        </sign>
+        <sign_type>
+            MD5
+        </sign_type>
+        <return_url>
+            //oxm1.cc/img/fox.jpg
+        </return_url>
+        <notify_url>
+            //oxm1.cc/img/fox.jpg
+        </notify_url>
+    </alipayform>
+    <order>
+        <title>
+            light-weight watch
+        </title>
+        <detail>
+            watch
+        </detail>
+        <tradeno>
+            tough camera
+        </tradeno>
+        <totalfee>
+            3365.28
+        </totalfee>
+        <time>
+            screen
+        </time>
+        <totalcount>
+            418
+        </totalcount>
+        <status>
+            light-weight screen
+        </status>
+        <seller>
+            car
+        </seller>
+        <buyer>
+            car
+        </buyer>
+        <delivery>
+            wallet
+        </delivery>
+        <deliveryfee>
+            2313.35
+        </deliveryfee>
+        <paymethod>
+            notebook
+        </paymethod>
+    </order>
+    </data>
+</root>
