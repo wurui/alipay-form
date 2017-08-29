@@ -1,3 +1,61 @@
-.oxmod-alipay-form{
-/* CSS */
- }
+.oxmod-alipay-form {
+  /* CSS */
+}
+.oxmod-alipay-form .auto-wrapper {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.oxmod-alipay-form .error {
+  color: #f10;
+  text-align: center;
+}
+.oxmod-alipay-form .orderwrap {
+  background-color: #eee;
+  box-shadow: 0 0 0px 2px rgba(200, 200, 200, 0.3);
+}
+.oxmod-alipay-form .orderwrap > h3 {
+  margin: 0px;
+  padding: 10px;
+}
+.oxmod-alipay-form .order-info {
+  width: 100%;
+}
+.oxmod-alipay-form .order-info th,
+.oxmod-alipay-form .order-info td {
+  color: #555;
+  padding: 5px 10px;
+  background-color: #eee;
+  border: none;
+  border-top: dashed .5px #fff;
+}
+.oxmod-alipay-form .order-info th {
+  text-align: left;
+  font-weight: 300;
+}
+.oxmod-alipay-form .order-info td {
+  text-align: right;
+}
+.oxmod-alipay-form .price {
+  color: #f60;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.oxmod-alipay-form .price:before {
+  content: '\00a5\20';
+  font-family: sans-serif;
+  font-size: .8em;
+}
+.oxmod-alipay-form .wxpaybox {
+  text-align: center;
+  color: #999;
+}
+.oxmod-alipay-form .alipay,
+.oxmod-alipay-form .wxpay {
+  text-align: center;
+}
+.oxmod-alipay-form .wxpay:before {
+  content: '\e638';
+  font-family: iconfont;
+  color: #09bb07;
+  font-size: 60px;
+}

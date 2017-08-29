@@ -14,81 +14,23 @@
         <icon>//oxm1.cc/img/app_default.png</icon>
     </p>
     <data>
-            <alipayform>
-        <service>
-            mobilephone
-        </service>
-        <partner>
-            light-weight camera
-        </partner>
-        <_input_charset>
-            UTF-8
-        </_input_charset>
-        <payment_type>
-            1
-        </payment_type>
-        <total_fee>
-            1650.82
-        </total_fee>
-        <seller_id>
-            light-weight car
-        </seller_id>
-        <out_trade_no>
-            watch
-        </out_trade_no>
-        <subject>
-            strong watch
-        </subject>
-        <sign>
-            mobilephone
-        </sign>
-        <sign_type>
-            MD5
-        </sign_type>
-        <return_url>
-            //oxm1.cc/img/fox.jpg
-        </return_url>
-        <notify_url>
-            //oxm1.cc/img/fox.jpg
-        </notify_url>
-    </alipayform>
-    <order>
-        <title>
-            light-weight watch
-        </title>
-        <detail>
-            watch
-        </detail>
-        <tradeno>
-            tough camera
-        </tradeno>
-        <totalfee>
-            3365.28
-        </totalfee>
-        <time>
-            screen
-        </time>
-        <totalcount>
-            418
-        </totalcount>
-        <status>
-            light-weight screen
-        </status>
-        <seller>
-            car
-        </seller>
-        <buyer>
-            car
-        </buyer>
-        <delivery>
-            wallet
-        </delivery>
-        <deliveryfee>
-            2313.35
-        </deliveryfee>
-        <paymethod>
-            notebook
-        </paymethod>
-    </order>
+        <order>
+            <title>扫码车贴2张</title>
+            <totalfee>100.2</totalfee>
+        </order>
+        <alipayform>
+            <service>create_direct_pay_by_user</service>
+            <partner>customize</partner>
+            <_input_charset>UTF-8</_input_charset>
+            <return_url></return_url>
+            <notify_url></notify_url>
+            <payment_type>1</payment_type>
+            <total_fee>32.00</total_fee>
+            <seller_id>customize</seller_id>
+            <out_trade_no>5983f40688a70e24028b9435</out_trade_no>
+            <subject>扫码车贴ut</subject>
+            <sign>3b71e2e4c4163094ced665cf69ee38be</sign>
+            <sign_type>MD5</sign_type>
+        </alipayform>
     </data>
 </root>
