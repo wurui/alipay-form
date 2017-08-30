@@ -24,7 +24,7 @@
                                     </tr>
                                     <tr>
                                         <th>金额</th>
-                                        <td><b class="price"><xsl:value-of select="format-number(data/order/totalfee, '#.00')"/></b></td>
+                                        <td><b class="price"><xsl:value-of select="format-number(data/order/totalfee, '0.00')"/></b></td>
                                     </tr>
                                 </tbody>
                             </table>
