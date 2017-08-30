@@ -19,7 +19,7 @@
             <totalfee>0.12</totalfee>
         </order>
         <alipayform>
-            <service>create_direct_pay_by_user</service>
+
             <partner>customize</partner>
             <_input_charset>UTF-8</_input_charset>
             <return_url></return_url>
