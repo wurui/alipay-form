@@ -15,14 +15,14 @@
                             <tr>
                                 <th>商品</th>
                                 <td>
-                                    <xsl:value-of select="data/order/title"/>
+                                    <xsl:value-of select="data/alipayform/subject"/>
                                 </td>
                             </tr>
                             <tr>
                                 <th>金额</th>
                                 <td>
                                     <b class="price">
-                                        <xsl:value-of select="format-number(data/order/totalfee, '0.00')"/>
+                                        <xsl:value-of select="format-number(data/alipayform/total_fee, '0.00')"/>
                                     </b>
                                 </td>
                             </tr>
@@ -55,9 +55,9 @@
                                             var isIOS=/iphone|ipad|ios/i.test(navigator.userAgent)
                                             paytip.style.display="block";
                                             paytip.innerHTML='请点击上方菜单选择用'+(isIOS?'Safari':'浏览器')+'打开完成付款<big style="display:inline-block;transform:rotate(-90deg)">&#8627;</big>&#160;&#160;&#160;&#160;'
-                                            document.getElementById('bottomtip').innerHTML='付款完成后请回到本页面<br/><a href="https://m.shaomachetie.com/smct-order">查看订单</a>'
+                                            document.getElementById('bottomtip').innerHTML='付款完成后请回到本页面<br/>'
                                         }else{
-                                           // document.forms.payform.submit();
+                                            document.forms.payform.submit();
                                         }
                                         ]]>
                             </script>

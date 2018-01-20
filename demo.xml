@@ -14,10 +14,6 @@
         <icon>//oxm1.cc/img/app_default.png</icon>
     </p>
     <data>
-        <order>
-            <title>扫码车贴2张</title>
-            <totalfee>0.12</totalfee>
-        </order>
         <alipayform>
 
             <partner>customize</partner>
