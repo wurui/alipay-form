@@ -4,7 +4,7 @@
         <div class="J_OXMod oxmod-alipay-form" ox-mod="alipay-form">
             <div class="auto-wrapper">
                 
-                <div id="tip" style="color:#f60;text-align:right;display:none;">
+                <div class="J_tip" style="color:#f60;text-align:right;display:none;">
                 </div>
                 <div class="orderwrap">
                     <h3>
@@ -15,14 +15,14 @@
                             <tr>
                                 <th>商品</th>
                                 <td>
-                                    <xsl:value-of select="data/alipayform/subject"/>
+                                    <xsl:value-of select="data/payform/subject"/>
                                 </td>
                             </tr>
                             <tr>
                                 <th>金额</th>
                                 <td>
                                     <b class="price">
-                                        <xsl:value-of select="format-number(data/alipayform/total_fee, '0.00')"/>
+                                        <xsl:value-of select="format-number(data/payform/totalfee, '0.00')"/>
                                     </b>
                                 </td>
                             </tr>
@@ -37,30 +37,19 @@
                     </div>
 
                     <xsl:choose>
-                        <xsl:when test="data/alipayform/service !='' ">
-                            <div id="bottomtip">
+                        <xsl:when test="count(data/payform/form/i) &gt; 0 ">
+                            <div class="J_bottomtip">
                                 正在跳转支付宝收银台...
                             </div>
 
                             <form name="payform" action="https://mapi.alipay.com/gateway.do" type="get">
 
-                                <xsl:for-each select="data/alipayform/*">
-                                    <input type="hidden" name="{name(.)}" value="{.}"/>
+                                <xsl:for-each select="data/payform/form/i">
+                                    <input type="hidden" name="{name}" value="{value}"/>
                                 </xsl:for-each>
                                 <button>提交</button>
                             </form>
-                            <script><![CDATA[
-                                        if(/QQ/.test(navigator.userAgent)){
-                                            var paytip=document.getElementById('tip');
-                                            var isIOS=/iphone|ipad|ios/i.test(navigator.userAgent)
-                                            paytip.style.display="block";
-                                            paytip.innerHTML='请点击上方菜单选择用'+(isIOS?'Safari':'浏览器')+'打开完成付款<big style="display:inline-block;transform:rotate(-90deg)">&#8627;</big>&#160;&#160;&#160;&#160;'
-                                            document.getElementById('bottomtip').innerHTML='付款完成后请回到本页面<br/>'
-                                        }else{
-                                            document.forms.payform.submit();
-                                        }
-                                        ]]>
-                            </script>
+
                         </xsl:when>
                         <xsl:otherwise>
                             <h3 class="error">
@@ -69,10 +58,7 @@
                             </h3>
                         </xsl:otherwise>
                     </xsl:choose>
-
                 </div>
-
-
             </div>
         </div>
     </xsl:template>

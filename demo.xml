@@ -28,5 +28,66 @@
             <sign>3b71e2e4c4163094ced665cf69ee38be</sign>
             <sign_type>MD5</sign_type>
         </alipayform>
+        <payform>
+            <type>alipay</type>
+            <totalfee>32.00</totalfee>
+            <seller>git/wurui</seller>
+            <buyer>git/wurui</buyer>
+            <out_trade_no>5983f40688a70e24028b9435</out_trade_no>
+            <subject>扫码车贴</subject>
+            <form>
+                <i>
+                    <name>partner</name>
+                    <value>customize</value>
+                </i>
+                <i>
+                    <name>_input_charset</name>
+                    <value>UTF-8</value>
+                </i>
+                <i>
+                    <name>return_url</name>
+                    <value></value>
+                </i>
+                <i>
+                    <name>notify_url</name>
+                    <value></value>
+                </i>
+                <i>
+                    <name>payment_type</name>
+                    <value>1</value>
+                </i>
+                <i>
+                    <name>total_fee</name>
+                    <value>32.00</value>
+                </i>
+                <i>
+                    <name>seller_id</name>
+                    <value>customize</value>
+                </i>
+                <i>
+                    <name>out_trade_no</name>
+                    <value>5983f40688a70e24028b9435</value>
+                </i>
+                <i>
+                    <name>subject</name>
+                    <value>扫码车贴</value>
+                </i>
+                <i>
+                    <name>sign</name>
+                    <value>3b71e2e4c4163094ced665cf69ee38be</value>
+                </i>
+                <i>
+                    <name>sign_type</name>
+                    <value>MD5</value>
+                </i>
+                <i>
+                    <name>service</name>
+                    <value>alipay.wap.create.direct.pay.by.user</value>
+                </i>
+            </form>
+
+
+        
+        </payform>
     </data>
 </root>
